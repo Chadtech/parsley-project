@@ -1,6 +1,6 @@
 module Components.Basics exposing (..)
 
-import Html exposing (Html, p, input, div)
+import Html exposing (Html, p, input, div, node)
 import Html.Attributes exposing (class, value, spellcheck, placeholder)
 import Html.Events exposing (onInput)
 import Types.Message exposing (Message(..), Handler)
@@ -25,3 +25,8 @@ words class_ words =
 mainContainer : List (Html Message) -> Html Message
 mainContainer =
     div [ class "main" ]
+
+
+card : List (Html Message) -> Html Message
+card =
+    node "card" []
