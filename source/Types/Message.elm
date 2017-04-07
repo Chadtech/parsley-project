@@ -2,7 +2,8 @@ module Types.Message exposing (Message(..), Handler)
 
 
 type Message
-    = NoOp
+    = Proceed
+    | UpdateNameField String
 
 
 type alias Handler a =

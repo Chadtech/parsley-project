@@ -1,8 +1,8 @@
 module Components.Basics exposing (..)
 
-import Html exposing (Html, p, input, div, node)
-import Html.Attributes exposing (class, value, spellcheck, placeholder)
-import Html.Events exposing (onInput)
+import Html exposing (Html, Attribute, p, input, div, node)
+import Html.Attributes exposing (class, value, spellcheck, placeholder, type_)
+import Html.Events exposing (onInput, onClick)
 import Types.Message exposing (Message(..), Handler)
 
 
@@ -30,3 +30,24 @@ mainContainer =
 card : List (Html Message) -> Html Message
 card =
     node "card" []
+
+
+button : Maybe Message -> String -> String -> Html Message
+button maybeClickHandler label class_ =
+    let
+        attributes =
+            case maybeClickHandler of
+                Just clickHandler ->
+                    [ class ("button " ++ class_)
+                    , onClick clickHandler
+                    , type_ "submit"
+                    , value label
+                    ]
+
+                Nothing ->
+                    [ class ("button not-ready " ++ class_)
+                    , value label
+                    , type_ "submit"
+                    ]
+    in
+        input attributes []
