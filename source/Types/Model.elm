@@ -1,5 +1,6 @@
-module Types.Model exposing (Model, Stage(..))
+module Types.Model exposing (Model)
 
+import Types.Stage exposing (Stage(..))
 import Set exposing (Set)
 import UsStates
 
@@ -21,14 +22,3 @@ type alias Model =
     , diseases : Set String
     , contractAccepted : Bool
     }
-
-
-type Stage
-    = Welcome
-    | PersonalInformation
-    | FamilyHistory
-    | Medications
-    | Diseases
-    | Allergies
-    | Contract
-    | Complete

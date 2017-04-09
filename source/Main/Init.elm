@@ -1,6 +1,7 @@
 module Main.Init exposing (model, cmd)
 
-import Types.Model exposing (Model, Stage(..))
+import Types.Model exposing (Model)
+import Types.Stage exposing (Stage(..))
 import Types.Message exposing (Message(..))
 import UsStates exposing (Abbreviation(AL))
 import Set

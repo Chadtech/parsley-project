@@ -1,7 +1,8 @@
 module PersonalInformation.View exposing (view)
 
 import Html exposing (Html)
-import Types.Model exposing (Model, Stage(..))
+import Types.Model exposing (Model)
+import Types.Stage exposing (Stage(..))
 import Types.Message exposing (Message(..))
 import Components.Basics exposing (card, words)
 import Components.BottomButtons as Buttons

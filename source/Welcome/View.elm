@@ -3,7 +3,7 @@ module Welcome.View exposing (view)
 import Html exposing (Html, div)
 import Html.Attributes exposing (class)
 import Types.Message exposing (Message(..))
-import Types.Model exposing (Stage(..))
+import Types.Stage exposing (Stage(..))
 import Components.Basics exposing (card, words)
 import Components.BottomButtons as Buttons
 
