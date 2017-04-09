@@ -2,16 +2,22 @@ module Main.Init exposing (model, cmd)
 
 import Types.Model exposing (Model, Stage(..))
 import Types.Message exposing (Message(..))
+import UsStates exposing (Abbreviation(AL))
 import Set
 
 
 model : Model
 model =
-    { stage = Welcome
-    , name = ""
+    { stage = FamilyHistory
+    , firstName = ""
+    , lastName = ""
     , email = ""
-    , address = ( "", "", "", "" )
-    , birthPlace = ""
+    , addressLine0 = ""
+    , addressLine1 = ""
+    , city = ""
+    , state = AL
+    , stateDropped = False
+    , zip = ""
     , familyMedicalHistory = Set.empty
     , allergies = Set.empty
     , medications = Set.empty

@@ -6,17 +6,6 @@ import Html.Events exposing (onInput, onClick)
 import Types.Message exposing (Message(..), Handler)
 
 
-field : Handler String -> String -> String -> Html Message
-field handler placeholder_ value_ =
-    input
-        [ class "field"
-        , value value_
-        , onInput handler
-        , placeholder placeholder_
-        ]
-        []
-
-
 words : String -> String -> Html Message
 words class_ words =
     p [ class class_ ] [ Html.text words ]

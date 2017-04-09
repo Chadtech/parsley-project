@@ -1,14 +1,20 @@
 module Types.Model exposing (Model, Stage(..))
 
 import Set exposing (Set)
+import UsStates
 
 
 type alias Model =
     { stage : Stage
-    , name : String
+    , firstName : String
+    , lastName : String
     , email : String
-    , address : ( String, String, String, String )
-    , birthPlace : String
+    , addressLine0 : String
+    , addressLine1 : String
+    , city : String
+    , state : UsStates.Abbreviation
+    , stateDropped : Bool
+    , zip : String
     , familyMedicalHistory : Set String
     , allergies : Set String
     , medications : Set String
@@ -20,6 +26,9 @@ type alias Model =
 type Stage
     = Welcome
     | PersonalInformation
-    | MedicalHistory
+    | FamilyHistory
+    | Medications
+    | Diseases
+    | Allergies
     | Contract
     | Complete

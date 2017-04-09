@@ -2,20 +2,17 @@ module Main.Update exposing (update)
 
 import Types.Model exposing (Model)
 import Types.Message exposing (Message(..))
-import Main.Proceed as Proceed
+import PersonalInformation.Update as PersonalInformation
 
 
 update : Message -> Model -> ( Model, Cmd Message )
 update message model =
     case message of
-        Proceed ->
+        SetStage stage ->
             { model
-                | stage = Proceed.to model
+                | stage = stage
             }
                 ! []
 
-        UpdateNameField name ->
-            { model
-                | name = name
-            }
-                ! []
+        PersonalInformationWrapper personalInformationMessage ->
+            PersonalInformation.update personalInformationMessage model
