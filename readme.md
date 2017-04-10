@@ -2,7 +2,7 @@
 
 How to get going..
 ```
-> git clone https://github.com/Chadtech/parsley-project
+> git clone https://github.com/Chadtech/parsley-project.git
 > cd parsley-project
 > npm install
 > elm package install --yes
