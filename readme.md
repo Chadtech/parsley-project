@@ -34,9 +34,11 @@ source/
     View.elm              -- Top most View module
     Update.elm            -- Top most update module
     Init.elm              -- Initial model
-    Add.elm               -- Update helper to add list items
-    Remove.elm            -- Update helper to remove list items
-    Field.elm             -- Update helper to update fields
+  Update/                 -- Update helpers
+    Add.elm               
+    Remove.elm            
+    Field.elm             
+    Log.elm
     *.elm
   Types/
     Model.elm             -- Definition of the apps model

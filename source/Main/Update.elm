@@ -4,10 +4,10 @@ import Types.Model exposing (Model)
 import Types.Message exposing (Message(..))
 import Types.Stage exposing (Stage(..))
 import PersonalInformation.Update as PersonalInformation
-import Main.Log exposing (consoleLog)
-import Main.Add as Add
-import Main.Remove as Remove
-import Main.Field as Field
+import Update.Log exposing (consoleLog)
+import Update.Add as Add
+import Update.Remove as Remove
+import Update.Field as Field
 
 
 update : Message -> Model -> ( Model, Cmd Message )
