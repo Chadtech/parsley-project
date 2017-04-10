@@ -7,14 +7,14 @@ import Types.Model exposing (Model)
 import Types.Stage exposing (Stage(..))
 import Types.Message exposing (Message(..))
 import Components.Basics exposing (card)
-import Welcome.View as Welcome
-import PersonalInformation.View as PersonalInformation
-import FamilyHistory.View as FamilyHistory
-import Medications.View as Medications
-import Diseases.View as Diseases
-import Allergies.View as Allergies
-import Contract.View as Contract
-import Complete.View as Complete
+import View.Welcome as Welcome
+import View.PersonalInformation as PersonalInformation
+import View.FamilyHistory as FamilyHistory
+import View.Medications as Medications
+import View.Diseases as Diseases
+import View.Allergies as Allergies
+import View.Contract as Contract
+import View.Complete as Complete
 
 
 view : Model -> Html Message

@@ -1,4 +1,4 @@
-module Contract.View exposing (view)
+module View.Contract exposing (view)
 
 import Html exposing (Html)
 import Types.Model exposing (Model)
@@ -6,7 +6,7 @@ import Types.Message exposing (Message(..))
 import Types.Stage exposing (Stage(..))
 import Components.Basics exposing (card, words)
 import Components.BottomButtons as Buttons
-import Contract.Components.Basics as Components
+import View.Contract.Components as Components
 
 
 view : Model -> Html Message

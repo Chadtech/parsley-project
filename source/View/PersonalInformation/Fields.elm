@@ -1,4 +1,4 @@
-module PersonalInformation.Fields exposing (..)
+module View.PersonalInformation.Fields exposing (..)
 
 import Html exposing (Html)
 import Types.Model exposing (Model)

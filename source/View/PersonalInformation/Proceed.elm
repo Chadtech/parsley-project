@@ -1,4 +1,4 @@
-module PersonalInformation.Proceed exposing (permit)
+module View.PersonalInformation.Proceed exposing (permit)
 
 import Types.Model exposing (Model)
 import Types.Stage exposing (Stage(..))

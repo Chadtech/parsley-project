@@ -1,4 +1,4 @@
-module PersonalInformation.View exposing (view)
+module View.PersonalInformation exposing (view)
 
 import Html exposing (Html)
 import Types.Model exposing (Model)
@@ -6,8 +6,8 @@ import Types.Stage exposing (Stage(..))
 import Types.Message exposing (Message(..))
 import Components.Basics exposing (card, words)
 import Components.BottomButtons as Buttons
-import PersonalInformation.Fields as Fields
-import PersonalInformation.Proceed as Proceed
+import View.PersonalInformation.Fields as Fields
+import View.PersonalInformation.Proceed as Proceed
 import Components.DropDown as DropDown
 import UsStates
 

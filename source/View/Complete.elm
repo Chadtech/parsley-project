@@ -1,4 +1,4 @@
-module Welcome.View exposing (view)
+module View.Complete exposing (view)
 
 import Html exposing (Html, div)
 import Html.Attributes exposing (class)
@@ -15,15 +15,10 @@ view =
             [ class "welcome-container" ]
             [ words
                 "big vector center"
-                "New Patient Form"
+                "Thanks!"
             , words
                 "center"
-                "Please complete all fields, and press 'Next' to proceed."
+                "You're all done."
             ]
-        , Buttons.view Nothing (Just nextPage)
+        , Buttons.view Nothing Nothing
         ]
-
-
-nextPage : Message
-nextPage =
-    SetStage PersonalInformation

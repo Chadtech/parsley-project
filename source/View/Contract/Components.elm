@@ -1,4 +1,4 @@
-module Contract.Components.Basics exposing (..)
+module View.Contract.Components exposing (..)
 
 import Html exposing (Html, node)
 import Html.Events exposing (onClick)

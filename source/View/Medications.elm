@@ -1,4 +1,4 @@
-module Allergies.View exposing (view)
+module View.Medications exposing (view)
 
 import Html exposing (Html)
 import Types.Model exposing (Model)
@@ -7,30 +7,26 @@ import Types.Stage exposing (Stage(..))
 import Components.Basics exposing (card, words)
 import Components.BottomButtons as Buttons
 import Components.List as List
-import Allergies.Message exposing (AllergiesMessage(..))
 
 
 view : Model -> Html Message
 view model =
     card
-        [ words "" "Allergies"
+        [ words "" "Medications"
         , List.view
-            "Type in allergies you have."
-            "\"seclor\", \"red wine\", \"peanuts\", etc"
-            model.allergiesField
-            (AllergiesWrapper << UpdateAddField)
-            (AllergiesWrapper Add)
-            (AllergiesWrapper << Remove)
-            model.allergies
+            "Type in the medications you take on a regular basis."
+            "\"aspirin\", \"lipitor\", \"prozac\", etc"
+            model.medicationsField
+            model.medications
         , Buttons.view (Just previousStage) (Just nextStage)
         ]
 
 
 nextStage : Message
 nextStage =
-    SetStage Contract
+    SetStage Diseases
 
 
 previousStage : Message
 previousStage =
-    SetStage Diseases
+    SetStage FamilyHistory
