@@ -2,11 +2,13 @@ module Main.Update exposing (update)
 
 import Types.Model exposing (Model)
 import Types.Message exposing (Message(..))
+import Types.Stage exposing (Stage(..))
 import PersonalInformation.Update as PersonalInformation
 import FamilyHistory.Update as FamilyHistory
 import Medications.Update as Medications
 import Diseases.Update as Diseases
 import Allergies.Update as Allergies
+import Main.Log exposing (consoleLog)
 
 
 update : Message -> Model -> ( Model, Cmd Message )
@@ -16,7 +18,7 @@ update message model =
             { model
                 | stage = stage
             }
-                ! []
+                ! (isComplete stage model)
 
         PersonalInformationWrapper personalInformationMessage ->
             PersonalInformation.update personalInformationMessage model
@@ -32,3 +34,17 @@ update message model =
 
         AllergiesWrapper allergiesMessage ->
             Allergies.update allergiesMessage model
+
+        Agree ->
+            { model
+                | contractAccepted = not model.contractAccepted
+            }
+                ! []
+
+
+isComplete : Stage -> Model -> List (Cmd Message)
+isComplete stage model =
+    if stage == Complete then
+        [ consoleLog model ]
+    else
+        []

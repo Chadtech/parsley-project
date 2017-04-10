@@ -15,6 +15,7 @@ type Message
     | MedicationsWrapper MedicationsMessage
     | DiseasesWrapper DiseasesMessage
     | AllergiesWrapper AllergiesMessage
+    | Agree
 
 
 type alias Handler a =

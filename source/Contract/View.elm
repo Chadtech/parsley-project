@@ -14,6 +14,7 @@ view model =
     card
         [ words "" "Release of information"
         , Components.contractText
+        , Components.agree model
         , Buttons.view (Just previousStage) (nextStage model)
         ]
 

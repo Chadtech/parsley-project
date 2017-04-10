@@ -1,7 +1,9 @@
 module Contract.Components.Basics exposing (..)
 
 import Html exposing (Html, node)
+import Html.Events exposing (onClick)
 import Types.Message exposing (Message(..))
+import Types.Model exposing (Model)
 import Components.Basics exposing (words)
 
 
@@ -12,3 +14,24 @@ contractText =
         |> words ""
         |> List.singleton
         |> node "contract-text" []
+
+
+agree : Model -> Html Message
+agree { contractAccepted } =
+    node
+        "agree-container"
+        [ onClick Agree ]
+        [ agreeButton contractAccepted
+        , words "" "I agree to the terms and conditions above."
+        ]
+
+
+agreeButton : Bool -> Html Message
+agreeButton accepted =
+    if accepted then
+        node
+            "agree-button"
+            []
+            [ words "" "x" ]
+    else
+        node "agree-button" [] []

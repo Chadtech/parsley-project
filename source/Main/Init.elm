@@ -9,7 +9,7 @@ import Set
 
 model : Model
 model =
-    { stage = FamilyHistory
+    { stage = Welcome
     , firstName = ""
     , lastName = ""
     , email = ""
