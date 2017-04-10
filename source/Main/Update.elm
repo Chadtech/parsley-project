@@ -3,7 +3,7 @@ module Main.Update exposing (update)
 import Types.Model exposing (Model)
 import Types.Message exposing (Message(..))
 import Types.Stage exposing (Stage(..))
-import PersonalInformation.Update as PersonalInformation
+import Update.PersonalInformation as PersonalInformation
 import Update.Log exposing (consoleLog)
 import Update.Add as Add
 import Update.Remove as Remove

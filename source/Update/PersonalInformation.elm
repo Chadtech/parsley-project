@@ -1,8 +1,8 @@
-module PersonalInformation.Update exposing (update)
+module Update.PersonalInformation exposing (update)
 
 import Types.Model exposing (Model)
 import Types.Message exposing (Message(..))
-import PersonalInformation.Message exposing (PersonalInformationMessage(..))
+import Types.PersonalInformation exposing (PersonalInformationMessage(..))
 
 
 update : PersonalInformationMessage -> Model -> ( Model, Cmd Message )

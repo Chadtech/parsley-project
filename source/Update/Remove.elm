@@ -1,4 +1,4 @@
-module Main.Remove exposing (handle)
+module Update.Remove exposing (handle)
 
 import Types.Model exposing (Model)
 import Types.Stage exposing (Stage(..))

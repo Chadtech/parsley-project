@@ -1,4 +1,4 @@
-module PersonalInformation.Message exposing (PersonalInformationMessage(..))
+module Types.PersonalInformation exposing (PersonalInformationMessage(..))
 
 import UsStates
 

@@ -1,4 +1,4 @@
-module Main.Log exposing (consoleLog)
+module Update.Log exposing (consoleLog)
 
 import Types.Model exposing (Model)
 import Types.Message exposing (Message(..))

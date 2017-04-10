@@ -1,4 +1,4 @@
-module Main.Field exposing (handle)
+module Update.Field exposing (handle)
 
 import Types.Model exposing (Model)
 import Types.Stage exposing (Stage(..))

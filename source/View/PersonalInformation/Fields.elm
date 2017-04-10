@@ -4,7 +4,7 @@ import Html exposing (Html)
 import Types.Model exposing (Model)
 import Types.Message exposing (Message(..))
 import Components.Field as Field
-import PersonalInformation.Message exposing (PersonalInformationMessage(..))
+import Types.PersonalInformation exposing (PersonalInformationMessage(..))
 import UsStates
 import UsStates exposing (Abbreviation(AL))
 import Components.DropDown as DropDown

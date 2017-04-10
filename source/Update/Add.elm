@@ -1,4 +1,4 @@
-module Main.Add exposing (handle)
+module Update.Add exposing (handle)
 
 import Types.Model exposing (Model)
 import Types.Stage exposing (Stage(..))
