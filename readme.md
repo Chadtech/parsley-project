@@ -34,41 +34,14 @@ source/
     View.elm              -- Top most View module
     Update.elm            -- Top most update module
     Init.elm              -- Initial model
+    Add.elm               -- Update helper to add list items
+    Remove.elm            -- Update helper to remove list items
+    Field.elm             -- Update helper to update fields
     *.elm
   Types/
     Model.elm             -- Definition of the apps model
     Message.elm           -- Definition of the apps messages
     *.elm
-  Welmcome/
-    View.elm              -- View for Welcome page
-  Complete/
-    View.elm              -- View for Complete page
-  PersonalInformation/
-    View.elm              -- View for Personal Information page
-    Message.elm           -- Messages just for updating this page
-    Update.elm            -- Update module just for this page
-    Fields.elm            -- Field components for the view module
-    Proceed.elm           -- Checks to see if the user can proceed
-  Medications/
-    View.elm              -- View for Medications page
-    Message.elm           -- Messages just for updating this page
-    Update.elm            -- Update module just for this page
-  FamilyHistory/
-    View.elm              -- View for Family History page
-    Message.elm           -- Messages just for updating this page
-    Update.elm            -- Update module just for this page
-  Diseases/
-    View.elm              -- View for Diseases page
-    Message.elm           -- Messages just for updating this page
-    Update.elm            -- Update module just for this page
-  Allergies/
-    View.elm              -- View for Allergies page
-    Message.elm           -- Messages just for updating this page
-    Update.elm            -- Update module just for this page
-  Contract/
-    View.elm              -- View function for the Contract page
-    Components/           -- View components for this page
-      Basics.elm          
   Components/             -- General view components used in many places
     DropDown.elm
     DropDown/
@@ -79,5 +52,19 @@ source/
     BottomButtons.elm
     Field.elm
     List.elm
+  View/                    -- Views for each stage in the form
+    Welcome.elm
+    PersonalInformation.elm
+    PersonalInformation/
+      Fields.elm
+      Proceed.elm
+    FamilyHistory.elm
+    Medications.elm
+    Diseases.elm
+    Allergies.elm
+    Contract.elm
+    Contract/
+      Components.elm
+    Complete.elm
 
 ```
