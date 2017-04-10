@@ -10,6 +10,11 @@ import Components.Basics exposing (card)
 import Welcome.View as Welcome
 import PersonalInformation.View as PersonalInformation
 import FamilyHistory.View as FamilyHistory
+import Medications.View as Medications
+import Diseases.View as Diseases
+import Allergies.View as Allergies
+import Contract.View as Contract
+import Complete.View as Complete
 
 
 view : Model -> Html Message
@@ -24,5 +29,17 @@ view model =
         FamilyHistory ->
             FamilyHistory.view model
 
-        _ ->
-            card []
+        Medications ->
+            Medications.view model
+
+        Diseases ->
+            Diseases.view model
+
+        Allergies ->
+            Allergies.view model
+
+        Contract ->
+            Contract.view model
+
+        Complete ->
+            Complete.view

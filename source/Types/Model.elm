@@ -16,9 +16,13 @@ type alias Model =
     , state : UsStates.Abbreviation
     , stateDropped : Bool
     , zip : String
-    , familyMedicalHistory : Set String
-    , allergies : Set String
-    , medications : Set String
-    , diseases : Set String
+    , familyHistory : List String
+    , allergies : List String
+    , medications : List String
+    , diseases : List String
     , contractAccepted : Bool
+    , familyHistoryField : String
+    , medicationsField : String
+    , diseasesField : String
+    , allergiesField : String
     }

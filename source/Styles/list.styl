@@ -1,7 +1,6 @@
 list-container
     display block
-    width 220px
-    height 300px
+    height 292px
     float left
     margin-right 16px
 
@@ -15,7 +14,58 @@ list-body
     border-bottom 2px solid ignorable1
     background backgroundx2
     
-    width 220px
-    height 300px
+    margin-top 12px
+    height 182px
     display block
     overflow-y scroll
+    
+list-item
+    height 20px
+    width 100%
+    display block
+    
+    &.odd
+        background offBlue
+
+list-button
+    display block
+    padding-top 13px
+    border-bottom 2px solid ignorable3
+    border-right 2px solid ignorable3
+    border-top 2px solid ignorable1
+    border-left 2px solid ignorable1
+    background ignorable2
+    float right
+    
+    &.add
+        height 8px
+        width 22px
+        margin-top -27px
+        margin-right 2px
+        
+        p
+            margin-top -11px
+            margin-left 5px
+    
+    &.remove
+        height 3px
+        width 17px
+        margin-top -20px
+
+        p
+            margin-top -16px
+            margin-left 3px
+
+    &:hover
+        triangle
+            border-top 7px solid pointier
+            
+        p
+            color pointier
+                        
+    &:active
+        border-bottom 2px solid ignorable1
+        border-right 2px solid ignorable1
+        border-top 2px solid ignorable3
+        border-left 2px solid ignorable3
+

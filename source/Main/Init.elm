@@ -19,11 +19,15 @@ model =
     , state = AL
     , stateDropped = False
     , zip = ""
-    , familyMedicalHistory = Set.empty
-    , allergies = Set.empty
-    , medications = Set.empty
-    , diseases = Set.empty
+    , familyHistory = []
+    , allergies = []
+    , medications = []
+    , diseases = []
     , contractAccepted = False
+    , familyHistoryField = ""
+    , medicationsField = ""
+    , diseasesField = ""
+    , allergiesField = ""
     }
 
 
