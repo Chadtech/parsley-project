@@ -1,4 +1,4 @@
-# HI THERE
+# Parsley Project
 
 How to get going..
 ```
